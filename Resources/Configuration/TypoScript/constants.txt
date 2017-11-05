@@ -28,3 +28,10 @@ plugin {
 		}
 	}
 }
+
+bootstrap.ext.form.modal = 1
+bootstrap.config.compress = 0
+bootstrap.config.lastModifiedContentElement = 1
+styles.content.textmedia.linkWrap.lightboxEnabled = 1
+
+
