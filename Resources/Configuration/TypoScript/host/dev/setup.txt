@@ -1,0 +1,8 @@
+config {
+	baseURL = http://kein-handicap.woehlke.org/
+	absRefPrefix = http://kein-handicap.woehlke.org/
+	compressCss = 0
+	compressJs = 0
+	concatenateCss = 0
+	concatenateJs = 0
+}

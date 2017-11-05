@@ -1,0 +1,30 @@
+
+#-------------------------------------------------------------------------------
+#	Plugin Constants
+#-------------------------------------------------------------------------------
+
+# {$plugin.tx_keinhandicap_sitepackage.settings.host}
+
+plugin {
+	tx_keinhandicap_sitepackage {
+		url {
+			local = http://localhost/t3petclinic/
+			dev = http://kein-handicap.woehlke.org/
+			live = http://kein-handicap.woehlke.org/
+		}
+		view {
+			# cat=plugin.tx_keinhandicap_sitepackage/file; type=string; label=Path to template root (FE)
+			templateRootPath = EXT:keinhandicap_sitepackage/Resources/Private/Templates/
+			# cat=plugin.tx_keinhandicap_sitepackage/file; type=string; label=Path to templates for Content Elements (FE)
+			content. templateRootPath= EXT:keinhandicap_sitepackage/Resources/Private/Templates/Content/
+			# cat=plugin.tx_keinhandicap_sitepackage/file; type=string; label=Path to template partials (FE)
+			partialRootPath = EXT:keinhandicap_sitepackage/Resources/Private/Partials/
+			# cat=plugin.tx_keinhandicap_sitepackage/file; type=string; label=Path to template layouts (FE)
+			layoutRootPath = EXT:keinhandicap_sitepackage/Resources/Private/Layouts/
+		}
+		settings {
+			# cat=plugin.tx_keinhandicap_sitepackage/linke; type=string; label=Host (URL of local,test,live)
+			host = {$plugin.tx_keinhandicap_sitepackage.url.test}
+		}
+	}
+}
